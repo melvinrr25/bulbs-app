@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  </head>
+  <body>
+    <main class="container">
+      <form id="settings">
+        <h1>Your Bulb Settings</h1>
+        <div class="grid">
+          <div>
+            <label> 
+              Color
+              <input type="color" name="color">
+            </label>
+          </div>
+          <div>
+            <label> 
+              Brightness
+              <input type="range" id="cowbell" name="brightness" min="0" max="100" value="90" step="10">
+            </label>
+          </div>
+          <div>
+            <label for="">
+              &nbsp;
+              <input id="settings-submit" type="submit" value="Save">
+            </label>
+          </div>
+        </div>   
+        </div>   
+      </form>   
+    </main>
+    <script src="{{url_for('static', filename='settings.js')}}"></script>
+  </body>
+</html>
